@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".RecyclerViewItems">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp"
+        android:padding="15dp"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintlayout"
+            android:layout_width="392dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/Textview_Heroname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Hero_name"
+                app:layout_constraintEnd_toStartOf="@id/Textview_Realname"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Textview_Realname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Real_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toEndOf="@id/Textview_Heroname"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Textview_Team"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Team"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/Textview_FirstApperence"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintTop_toBottomOf="@+id/Textview_Heroname" />
+
+            <TextView
+                android:id="@+id/Textview_FirstApperence"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/First_Apperence"
+                app:layout_constraintStart_toEndOf="@id/Textview_Team"
+                app:layout_constraintEnd_toStartOf="@id/Textview_Publisher"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintTop_toBottomOf="@+id/Textview_Heroname" />
+
+            <TextView
+                android:id="@+id/Textview_Publisher"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Publisher"
+               app:layout_constraintStart_toEndOf="@id/Textview_FirstApperence"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintTop_toBottomOf="@id/Textview_Heroname"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ImageView_heroImage"
+                android:src="@mipmap/ic_launcher"
+                app:layout_constraintTop_toBottomOf="@id/Textview_FirstApperence"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Textview_Bio"
+                android:text="@string/bio"
+                app:layout_constraintTop_toBottomOf="@id/ImageView_heroImage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

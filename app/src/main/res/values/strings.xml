@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Retrofittest</string>
+    <string name="Hero_name">marvel_God</string>
+    <string name="Real_name">Bharath</string>
+    <string name="Team">Marvel</string>
+    <string name="First_Apperence">Avenger</string>
+    <string name="Publisher">Marvel</string>
+    <string name="bio">Bio</string>
+</resources>
